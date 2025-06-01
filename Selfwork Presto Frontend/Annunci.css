@@ -1,0 +1,91 @@
+/* Lista colori standard */
+
+:root {
+    --yellow: rgb(255, 240, 50);
+    --red: rgb(255, 0, 50);
+    --green: rgb(50, 255, 108);
+    --black: rgb(30, 30, 30);
+    --blue: rgb(19, 181, 240);
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.bg-red {
+    background-color: var(--red);
+}
+
+.bg-green {
+    background-color: var(--green);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+
+
+/* Navbar */
+
+.nav-link {
+    color: var(--yellow);
+}
+
+.nav-link:hover {
+    color: var(--green);
+}
+
+.logo {
+    width: 150px;
+}
+
+
+
+
+/* Elementi principali */
+
+body {
+    background-color: var(--black);
+}
+
+h3 {
+    color: var(--green);
+}
+
+
+/* Personalizzazione Accordion */
+
+.accordion-item, .accordion-button {
+    background-color: var(--black);
+    color: var(--green);
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--red);
+    background-color: var(--black);
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+
+/* Personalizzazione Cards */
+.card-custom {
+    color: var(--yellow);
+    width: 250px;
+    border: 3px solid var(--green);
+    border-radius: 25px;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.card-image {
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+}

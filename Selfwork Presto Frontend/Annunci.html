@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annunci</title>
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="Annunci.css">
+    
+</head>
+
+
+
+<body>
+    
+
+    <!-- Navbar -->
+    <nav id="navbarMain" class="navbar navbar-expand-md bg-black sticky-top">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./Index.html">
+                <img src="./Media/Nissan GTR di notte.jpg" alt="Logo sito" class="logo">
+            </a>
+            <button class="navbar-toggler bg-green" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto text-center align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Annunci.html">Annunci</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./ChiSiamo.html">Chi siamo</a>
+                    </li>
+                </ul>
+                <div class="logo"> </div>
+            </div>
+        </div>
+
+    </nav>
+
+
+
+
+    <!-- Accordion -->
+    
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-12 col-md-3">
+                
+                <div class="accordion sticky-top" id="accordionExample">
+                    <h3>Filtra per:</h3>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                CATEGORIE
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div id="radioContainer" class="accordion-body">
+                                
+                                <input class="form-check-input" type="radio" name="categoria" id="allCategories" checked>
+                                <label class="form-check-label" for="allCategories">
+                                    Tutte le Categorie
+                                </label>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                PREZZO
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                
+                                <input id="prezzoInput" class="w-100" type="range" value="0" min="0" max="100">
+                                <p id="priceValue" class="lead">0</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                PAROLA
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                
+                                <input id="wordInput" class="w-100" type="text">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+            
+            <!-- Cards -->
+            
+            <section id="cardContainer" class="col-12 col-md-8 container-fluid d-flex flex-wrap">
+                
+                <!-- cards create tramite script leggendo le varie componenti dal json -->
+                
+            </section>
+            
+            
+        </div>
+        
+    </section>
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    ntegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+</script>
+
+<script src="./Annunci.js"></script>
+
+</body>
+
+</html>

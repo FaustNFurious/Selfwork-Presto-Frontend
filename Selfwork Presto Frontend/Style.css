@@ -1,0 +1,72 @@
+/* Lista colori standard */
+
+:root {
+    --yellow: rgb(255, 240, 50);
+    --red: rgb(255, 0, 50);
+    --green: rgb(50, 255, 108);
+    --black: rgb(30, 30, 30);
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.bg-red {
+    background-color: var(--red);
+}
+
+.bg-green {
+    background-color: var(--green);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+/* Navbar */
+
+.nav-link {
+    color: var(--yellow);
+}
+
+.nav-link:hover {
+    color: var(--green);
+}
+
+.logo {
+    width: 150px;
+}
+
+
+
+/* Body */
+
+body {
+    background-image: url(./Media/Bg-Galassia.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/* Header */
+
+h1 {
+    color: var(--yellow);
+}
+
+.btn-custom {
+    color: var(--yellow);
+    background-color: var(--black);
+    border-radius: 50px;
+    padding: 20px;
+    margin: 1%;
+    transition: 1s;
+}
+
+.btn-custom:hover {
+    color: var(--black);
+    background-color: var(--yellow);
+    transform: scale(1.2);
+}
